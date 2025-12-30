@@ -7,7 +7,8 @@
   <!-- Author -->
   <div class="flex gap-4 items-center mb-10 text-white p-10  bg-cover"
     style="background-image: url('{{ asset('assets/img/bg-profile.png') }}')">
-    <img src="{{ asset('storage/' . $author->avatar) }}" alt="profile" class="rounded-full object-cover flex-shrink-0" style="width: 112px; height: 112px; min-width: 112px; min-height: 112px;">
+    <img src="{{ asset('storage/' . $author->avatar) }}" alt="profile" class="rounded-full object-cover flex-shrink-0"
+      style="width: 112px; height: 112px; min-width: 112px; min-height: 112px;">
     <div class="">
       <p class="font-bold text-lg">{{ $author->name }}</p>
       <p>{{ $author->bio }}</p>

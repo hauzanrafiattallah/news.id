@@ -23,7 +23,7 @@
           <!-- Berita Card -->
           <div class=" gap-5 flex flex-col">
             @foreach ($newests as $new)
-              <a href="detail-MotoGp.html">
+              <a href="{{ route('news.show', $new->slug) }}">
                 <div class="flex gap-3 border border-slate-300 hover:border-primary p-3 rounded-xl">
                   <div class="bg-primary text-white rounded-full w-fit px-5 py-1 ml-2 mt-2 font-normal text-xs absolute">
                     {{ $new->newsCategory->title }}
@@ -47,7 +47,7 @@
   <!-- Author Section -->
   <div class="flex flex-col gap-4 mb-10 p-4 lg:p-10 lg:px-14 w-full lg:w-2/3">
     <p class="font-semibold text-xl lg:text-2xl mb-2">Author</p>
-    <a href="author.html">
+    <a href="{{ route('author.show', $news->author->username) }}">
       <div
         class="flex flex-col lg:flex-row gap-4 items-center border border-slate-300 rounded-xl p-6 lg:p-8 hover:border-primary transition">
         <img src="{{ asset('storage/' . $news->author->avatar) }}" alt="profile" class="rounded-full w-24 lg:w-28 border-2 border-primary">
