@@ -117,7 +117,7 @@
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
       @foreach ($authors as $author)
-        <a href="author.html" class="block h-full">
+        <a href="{{ route('author.show', $author->username) }}" class="block h-full">
           <div
             class="flex flex-col items-center border border-slate-200 px-4 py-8 rounded-2xl hover:border-primary hover:cursor-pointer h-full justify-between transition-colors duration-300">
 
